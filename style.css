@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  background-color: black;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 2;
+  color: #7d3593;
+  pointer-events: none;
+  font-weight: bold;
+  margin-left: 20px;
+ 
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #8b3593;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-weight: 600;
+  float: right;
+}
+
+.navigation a:hover,
+.navigation a.active {
+  background: #703593;
+  color: #fff;
+}
+
+.parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#text {
+  position: absolute;
+  font-size: 10em;
+  color: #fff;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.sec {
+  position: relative;
+  background: #310033;
+  padding: 100px;
+  margin: 0;
+}
+
+.sec h2 {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.sec p {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}
+
+#home.sec {
+  background: #8b3593; /* Purple shade for the home section */
+}
+
+#about.sec {
+  background: #703593; /* Purple shade for the about section */
+}
+
+#contact.sec {
+  background: #47217a; /* Purple shade for the contact section */
+}
+#submit.sec{
+background-color: #47217a;
+}
+.contact {
+  text-align: left;
+  margin-right: 50px;
+  font-family: Arial, sans-serif;
+  float: left;
+}
+
+.contact h2 {
+  font-size: 25px;
+}
+
+.contact p {
+  font-size: 20px;
+}
+form {
+  width: 500px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: #47217a;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #af4c75;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #751a60;
+}
+
+
+.project-container {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed */
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 30%; /* Adjust the width as needed */
+  margin-bottom: 20px; /* Add spacing between projects if desired */
+  color: rgba(0, 204, 255, 0.541);
+}
+
